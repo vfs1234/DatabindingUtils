@@ -117,4 +117,32 @@ public class PaddingUtil {
                 view.getPaddingRight(),
                 (int) padding);
     }
+
+    /**
+     * 为了直接设置px准备
+     * @param view
+     * @param padding
+     */
+    @BindingAdapter("android:padding")
+    public static void setPadding(View view, int padding) {
+        view.setPadding(padding,
+                padding,
+                padding,
+                padding);
+    }
+
+    /**
+     * 为dimens准备
+     * @param view
+     * @param padding
+     */
+    @BindingAdapter("android:padding")
+    public static void setPadding(View view, float padding) {
+        view.setPadding((int) padding,
+                (int) padding,
+                (int) padding,
+                (int) padding);
+    }
+
+
 }

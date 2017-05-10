@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="org.simpleworld.bindingutildemo.MainActivity">
+        tools:context="org.simpleworld.bindingutildemo.MainActivity"
+        android:background="@color/colorAccent">
 
         <TextView
             android:layout_width="wrap_content"
@@ -17,7 +18,8 @@
             app:layout_constraintTop_toTopOf="parent" />
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -29,7 +31,26 @@
                 android:paddingTop="@{10}"
                 android:paddingBottom="@{100}"
                 android:layout_marginLeft="@{300}"
+                android:layout_marginRight="@{30}"
+                android:layout_marginTop="@{40}"
+                android:layout_marginBottom="@{50}"
                 />
         </LinearLayout>
-    </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="12324325"
+                android:textColor="@{@color/colorAccent}"
+                android:layout_margin="@{34}"
+                android:padding="@{25}"
+                />
+        </LinearLayout>
+    </RelativeLayout>
 </layout>
