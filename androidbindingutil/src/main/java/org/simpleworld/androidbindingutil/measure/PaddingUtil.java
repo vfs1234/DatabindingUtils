@@ -1,7 +1,9 @@
 package org.simpleworld.androidbindingutil.measure;
 
 import android.databinding.BindingAdapter;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * Padding相关Adapter
